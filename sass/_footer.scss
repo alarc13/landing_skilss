@@ -1,0 +1,21 @@
+footer {
+  height: 4.1875rem;
+  background-color: $navyBlue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    width: 9.4375rem;
+    height: 2.5rem;
+  }
+
+  p {
+    font-family: $fontPrimary;
+    color: $white;
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: 0.02625rem;
+  }
+}

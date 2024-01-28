@@ -1,0 +1,118 @@
+.climb {
+  .climb-text {
+    height: 10.125rem;
+    margin-inline-start: 20.0625rem;
+    position: relative;
+
+    .number {
+      color: rgba(64, 79, 108, 0.5);
+      position: relative;
+      bottom: 1.125rem;
+      font-family: $fontSecundary;
+      font-size: 8.1875rem;
+      font-weight: 700;
+      letter-spacing: -0.0775rem;
+    }
+    .title {
+      position: relative;
+      width: 7.5rem;
+      z-index: 2;
+      left: 8.4375rem;
+      bottom: 7.625rem;
+      color: $navyBlue;
+      font-family: $fontSecundary;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.0375rem;
+    }
+    .content {
+      position: relative;
+      width: 33.875rem;
+      height: 2.125rem;
+      left: 14.6875rem;
+      bottom: 11.375rem;
+      font-family: $fontPrimary;
+      letter-spacing: -0.04375rem;
+      font-style: normal;
+    }
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    background: $navyBlue;
+    color: $grey;
+    input[type="radio"] {
+      display: none;
+    }
+    input[type="radio"]:checked + label {
+      background: $grey;
+      color: $navyBlue;
+      .active {
+        display: flex;
+        border: 0.03125rem solid $navyBlue;
+      }
+    }
+    input[type="radio"]:checked + label + .tab {
+      display: block;
+    }
+    input[type="radio"]:checked + label + #tab-one {
+      background-image: url("../images/mountain_1.jpg");
+      background-size: cover;
+    }
+    input[type="radio"]:checked + label + #tab-two {
+      background-image: url("../images/mountain_2.jpg");
+      background-size: cover;
+    }
+
+    label {
+      order: 1;
+      display: block;
+      margin-right: 0.125rem;
+      cursor: pointer;
+      padding: 0.3125rem 1.1875rem;
+      text-align: center;
+      font-family: $fontSecundary;
+      font-size: 1.25rem;
+    }
+    .tabone {
+      margin-left: 19.125rem;
+    }
+    .tab {
+      order: 99;
+      flex-grow: 1;
+      width: 100%;
+      display: none;
+      height: 30.6875rem;
+
+      .schedule {
+        width: 22rem;
+        height: 14.3125rem;
+        background: rgba(255, 255, 255, 0.7);
+        position: relative;
+        top: 5.75rem;
+        left: 19.6875rem;
+        h1 {
+          padding-block-start: 0.5rem;
+          padding-inline-start: 2.25rem;
+          color: $navyBlue;
+          font-size: 2rem;
+          letter-spacing: 0.0475rem;
+          font-family: $fontSecundary;
+        }
+        .schedule-content {
+          display: flex;
+          padding-block-start: 0.3125rem;
+          padding-inline-start: 2.25rem;
+          gap: 3rem;
+          line-height: 1.5rem;
+          ul {
+            list-style: none;
+            color: rgb(0, 0, 0);
+            font-family: $fontPrimary;
+          }
+        }
+      }
+    }
+  }
+}

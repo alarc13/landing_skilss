@@ -1,0 +1,220 @@
+@media (max-width: 720px) {
+  .hero {
+    height: 27.25rem;
+    background-position: center center;
+  }
+  .nav-middle {
+    padding-inline-start: 3.75rem;
+    .nav {
+      gap: 1.25rem;
+    }
+  }
+  .history {
+    height: 35.875rem;
+    .history-header {
+      bottom: 1.5rem;
+      margin-inline-start: 4.875rem;
+      .content {
+        width: 27.875rem;
+      }
+    }
+    .carousel {
+      margin-block-start: 6rem;
+      height: 10.5rem;
+      #item_3,
+      #item_4 {
+        display: none;
+      }
+    }
+  }
+
+  .climb {
+    .climb-text {
+      height: 10.125rem;
+      margin-inline-start: 5.875rem;
+      bottom: 0.625rem;
+      .content {
+        width: 18.75rem;
+      }
+    }
+    .tabs {
+      .tabone {
+        margin-inline-start: 4.75rem;
+      }
+      .tab {
+        .schedule {
+          left: 6.25rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .hero {
+    height: 22.75rem;
+    background-position: 42% 100%;
+    header {
+      img {
+        width: 2.125rem;
+      }
+      .nav {
+        gap: 1.125rem;
+      }
+    }
+  }
+
+  .nav-middle {
+    justify-content: space-between;
+    padding-inline: 2rem;
+    .nav {
+      gap: 1.125rem;
+      position: absolute;
+      top: 4.125rem;
+      right: 0;
+      padding: 0;
+      background: $white;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      transform: translateX(-100%);
+      transition: 0.3s ease all;
+      .item-nav {
+        .line-right,
+        .line-left {
+          display: none;
+        }
+      }
+      .linea-menu {
+        width: 100%;
+        border: 0.1875rem solid $navyBlue;
+      }
+      a {
+        margin: 1.875rem;
+        text-align: center;
+
+        :hover {
+          font-weight: bold;
+        }
+        ::before {
+          display: none;
+        }
+      }
+    }
+    .nav_toggle {
+      position: sticky;
+      display: flex !important;
+      flex-direction: column;
+    }
+    .nav_toggle span {
+      width: 2.5rem;
+      height: 0.25rem;
+      background: $navyBlue;
+      margin-bottom: 0.3125rem;
+      border-radius: 0.125rem;
+      transform-origin: 0.3125rem 0px;
+      transition: all 0.2s linear;
+    }
+    .close span {
+      transform: rotate(45deg) translate(0px, 0px);
+    }
+    .close span:nth-child(2) {
+      display: none;
+    }
+    .close span:nth-child(3) {
+      transform: rotate(-45deg) translate(-0.3125rem, 0.0625rem);
+    }
+    .open {
+      transform: translateX(0) !important;
+    }
+
+    img {
+      width: 8.125rem;
+      height: auto;
+    }
+  }
+  .history {
+    .history-header {
+      bottom: 0.625rem;
+      margin-inline-start: 1.75rem;
+      .number {
+        font-size: 6.25rem;
+      }
+      .title {
+        font-size: 1.75rem;
+        left: 5.6875rem;
+        bottom: 5.375rem;
+      }
+      .content {
+        width: 18.75rem;
+        left: 0.875rem;
+        bottom: 3.6875rem;
+      }
+    }
+    .carousel {
+      margin-block-start: 9.25rem;
+      #item_2,
+      #item_1_2 {
+        display: none;
+      }
+    }
+  }
+  .climb {
+    .climb-text {
+      bottom: 0.625rem;
+      margin-inline-start: 1.75rem;
+      .number {
+        font-size: 6.25rem;
+        bottom: 0;
+      }
+      .title {
+        font-size: 1.75rem;
+        left: 6.3125rem;
+        bottom: 5.375rem;
+      }
+      .content {
+        width: 18.75rem;
+        left: 0.875rem;
+        bottom: 3.6875rem;
+      }
+    }
+    .tabs {
+      margin-block-start: 5rem;
+      flex-direction: column;
+      .tabone {
+        margin-left: 0;
+      }
+      input[type="radio"]:checked + label .active {
+        display: none;
+      }
+      .tab {
+        height: 25.875rem;
+
+        .schedule {
+          width: 20.25rem;
+          top: 3.25rem;
+          left: 1.375rem;
+          h1 {
+            font-size: 1.625rem;
+            padding-inline-start: 1.625rem;
+            padding-block-start: 1.25rem;
+          }
+          .schedule-content {
+            padding-inline-start: 1.625rem;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding-inline: 0.625rem;
+
+    img {
+      width: 8.125rem;
+      height: auto;
+    }
+    p {
+      font-size: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: auto;
+  height: 743px;
+  background-image: url("../images/image_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div {
+  width: auto;
+  height: 68px;
+  background-color: #ffffff;
+}
+
+.history {
+  width: auto;
+  height: 814px;
+  background-image: url("../images/image_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.climb .tab-content {
+  width: auto;
+  height: 558px;
+  background-image: url("../images/image_3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=style.css.map */
